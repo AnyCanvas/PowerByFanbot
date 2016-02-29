@@ -1,0 +1,359 @@
+html{
+	height: 100%;
+}
+body{	
+	background-color: #55ACe8;
+	height: 100%;
+}
+
+.container-fluid{
+	height: 100%;
+	width: 100%
+}
+
+.vertical-center{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#indexDiv{
+	width: 250px;	
+}
+
+div#conoceMas{
+	background-color: #00ffea;
+	padding: 15px;
+	color: white;
+	font-weight: 700;
+	font-size: larger;
+	text-align: center;
+}
+
+#actionNumber{
+    width: 100px;
+    position: relative;
+    z-index: 3;
+    margin-left: 85px;
+    margin-top: -184px;
+    font-size: 18PX;
+	font-weight: bold;
+}
+
+/* fnbt index go button CSS*/
+.next-btn {
+   color: #fff;
+  background-color: #FBD034;
+  border-color: #FBD034;
+}
+.next-btn:hover, .next-btn:focus, .next-btn:active, .next-btn.active, .open > .next-btn.dropdown-toggle {
+  color: #fff;
+  background-color: #f7c305;
+  border-color: #edbb05;
+}
+.next-btn:active, .next-btn.active, .open > .next-btn.dropdown-toggle {
+  background-image: none;
+}
+.next-btn.disabled, .next-btn.disabled:hover, .next-btn.disabled:focus, .next-btn.disabled:active, .next-btn.disabled.active, .next-btn[disabled], .next-btn[disabled]:hover, .next-btn[disabled]:focus, .next-btn[disabled]:active, .next-btn[disabled].active, fieldset[disabled] .next-btn, fieldset[disabled] .next-btn:hover, fieldset[disabled] .next-btn:focus, fieldset[disabled] .next-btn:active, fieldset[disabled] .next-btn.active {
+  background-color: #FBD034;
+  border-color: #FBD034;
+}
+.next-btn .badge {
+  color: #FBD034;
+  background-color: #fff;
+}
+
+
+.top-row {  margin-top:4em; margin-bottom:4em;}
+
+.mid-row { margin-bottom:.25em;}
+
+.brand-row { margin-top:4em;}
+
+.inline-text {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.square-box{
+	border-radius: 0;
+	box-shadow: 3px 4px 1px #1583C7;
+}
+
+/* fnbt facebook login button CSS*/
+.fb-btn { 
+  color: #ffffff; 
+  background-color: #3B5999; 
+  border-color: #2D4373; 
+} 
+ 
+.fb-btn:hover, 
+.fb-btn:focus, 
+.fb-btn:active, 
+.fb-btn.active, 
+.open .dropdown-toggle.fb-btn { 
+  color: #ffffff; 
+  background-color: #425AB0; 
+  border-color: #2D4373; 
+} 
+ 
+.fb-btn:active, 
+.fb-btn.active, 
+.open .dropdown-toggle.fb-btn { 
+  background-image: none; 
+} 
+ 
+.fb-btn.disabled, 
+.fb-btn[disabled], 
+fieldset[disabled] .fb-btn, 
+.fb-btn.disabled:hover, 
+.fb-btn[disabled]:hover, 
+fieldset[disabled] .fb-btn:hover, 
+.fb-btn.disabled:focus, 
+.fb-btn[disabled]:focus, 
+fieldset[disabled] .fb-btn:focus, 
+.fb-btn.disabled:active, 
+.fb-btn[disabled]:active, 
+fieldset[disabled] .fb-btn:active, 
+.fb-btn.disabled.active, 
+.fb-btn[disabled].active, 
+fieldset[disabled] .fb-btn.active { 
+  background-color: #3B5999; 
+  border-color: #2D4373; 
+} 
+ 
+.fb-btn .badge { 
+  color: #3B5999; 
+  background-color: #ffffff; 
+}
+
+ #fblike {
+/*	transform: scale(1.5);
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	-o-transform: scale(1.5); 
+	-moz-transform: scale(1.5); 
+	transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-webkit-transform-origin: top left;
+    overflow: hidden;
+
+*/
+    width: 100%
+    margin: 5px auto 0px auto;
+}
+
+
+#fb_img{
+	width: 220px;
+}
+
+#index_img{
+	width: 100%;
+}
+.action_img{
+	    margin-bottom: 10px;
+}
+
+.like_box{
+	background: white;
+	padding: 10px;
+}
+
+#actionModal .modal-header{
+	background-color: #425AB0;
+	color: white;
+}
+
+#actionModal {
+  text-align: center;
+  padding: 0!important;
+}
+
+#actionModal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+#actionModal .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+#indexModal .modal-header{
+	background-color: #4F6BA5;
+	color: white;
+}
+
+a:hover#closeModalButton, a:visited#closeModalButton, a#closeModalButton {
+	color: grey;
+	
+}
+#modalButtonDiv a:visited{
+	color: white;
+}
+
+
+#modalButtonDiv a:hover{
+	color: white;
+}
+
+#modalButtonDiv a{
+	color: white;
+}
+
+#modalButtonDiv{
+	padding: 10px;
+}
+
+#indexModal .modal-body{
+	padding: 0;
+}
+
+#indexModal .modal-header .modal-title{
+	text-align: left;
+	padding-left: 0px;
+	line-height: normal;
+	font-size: inherit;
+}
+
+/*  Loader  Start */
+
+.wrapper {
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: auto;
+	display: block;
+	width: 180px;
+}
+
+.cssload-loader {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 3em;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+
+.cssload-loader {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 3em;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.cssload-loader,
+.cssload-loader:before,
+.cssload-loader:after {
+	animation: 2.95s infinite ease-in-out;
+		-o-animation: 2.95s infinite ease-in-out;
+		-ms-animation: 2.95s infinite ease-in-out;
+		-webkit-animation: 2.95s infinite ease-in-out;
+		-moz-animation: 2.95s infinite ease-in-out;
+}
+.cssload-loader:before,
+.cssload-loader:after {
+	width: 100%; 
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cssload-loader:before,
+.cssload-loader:after {
+		content: "";
+}
+
+.cssload-loader {
+		background-color: white;
+		animation: cssload-flower-fan 1.18s infinite linear;
+		-o-animation: cssload-flower-fan 1.18s infinite linear;
+		-ms-animation: cssload-flower-fan 1.18s infinite linear;
+		-webkit-animation: cssload-flower-fan 1.18s infinite linear;
+		-moz-animation: cssload-flower-fan 1.18s infinite linear;
+}
+.cssload-loader:before{
+	content: "";
+	width: 80%;
+	height: 80%;
+	background-color: white;
+	top: 10%;
+	left: 10%;
+	box-shadow: 4px -3px 0 rgba(255,100,100,0.7),
+				4px 4px 0 rgba(100,255,100,0.7),
+				-3px 4px 0 rgba(100,100,255,0.7),
+				-4px -4px 0 rgba(240,240,120,0.7);
+		-o-box-shadow: 4px -3px 0 rgba(255,100,100,0.7),
+				4px 4px 0 rgba(100,255,100,0.7),
+				-3px 4px 0 rgba(100,100,255,0.7),
+				-4px -4px 0 rgba(240,240,120,0.7);
+		-ms-box-shadow: 4px -3px 0 rgba(255,100,100,0.7),
+				4px 4px 0 rgba(100,255,100,0.7),
+				-3px 4px 0 rgba(100,100,255,0.7),
+				-4px -4px 0 rgba(240,240,120,0.7);
+		-webkit-box-shadow: 4px -3px 0 rgba(255,100,100,0.7),
+				4px 4px 0 rgba(100,255,100,0.7),
+				-3px 4px 0 rgba(100,100,255,0.7),
+				-4px -4px 0 rgba(240,240,120,0.7);
+		-moz-box-shadow: 4px -3px 0 rgba(255,100,100,0.7),
+				4px 4px 0 rgba(100,255,100,0.7),
+				-3px 4px 0 rgba(100,100,255,0.7),
+				-4px -4px 0 rgba(240,240,120,0.7);
+}
+.cssload-loader:after{
+	content: "";
+	border: 0px solid white;
+	z-index: 2;
+	top: -3px;
+	left: -3px;
+}
+
+
+
+
+@keyframes cssload-flower-fan {
+	0%	 { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-flower-fan {
+	0%	 { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-flower-fan {
+	0%	 { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-flower-fan {
+	0%	 { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-flower-fan {
+	0%	 { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+
+/* Loader end*/
