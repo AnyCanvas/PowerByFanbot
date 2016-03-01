@@ -14,10 +14,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php 
-		// $config = array("urls" => array("baseUrl" => "http://". .$_SERVER['HTTP_HOST'] ."/"));
-		$actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']; ?>
-	<script> alert('<?php echo $_SERVER['HTTP_HOST']; ?>');</script>
 
 <?php require_once( "resources/html/header.php" ); ?>
 	<title>Bienvenido a Fanbot</title>
