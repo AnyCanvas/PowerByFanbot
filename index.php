@@ -1,9 +1,11 @@
 <?php
 	session_start();
 	include 'resources/library/functions.php'; 
+	
+	getSiteInfo($_SERVER['HTTP_HOST']);
 
-	if( isset($_GET["name"]) ){
-			$_SESSION['fnbt']['name'] = $_GET["name"];
+	if( $_SESSION['site']['name'] != NULL ){
+			$_SESSION['fnbt']['name'] = $_SESSION['site']['name'];
 	} else{
 		if(isset($_SESSION['fnbt']['name'])){
 			unset($_SESSION['fnbt']['name']);

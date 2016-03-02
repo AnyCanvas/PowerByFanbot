@@ -267,6 +267,42 @@
 
 			}
 	}		
+
+	function getSiteInfo($url){
+		require(realpath(dirname(__FILE__) . "/../config.php"));		
+		$servername = $config["db"]["fanbot"]["host"];
+		$username = $config["db"]["fanbot"]["username"];
+		$password = $config["db"]["fanbot"]["password"];
+		$dbname = $config["db"]["fanbot"]["dbname"];
+
+		
+			
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		}
+		
+		$sql = "SELECT * FROM powerbyfnbt WHERE url = '". $url ."' ";
+		$result = $conn->query($sql);
+
+		$conn->close();
+		
+		if ($result->num_rows > 0) {		    
+		    while($row = $result->fetch_assoc()) {
+			    			        
+		        $_SESSION['site']['dir'] = $row["dir"];
+		        $_SESSION['site']['name'] = $row["name"];
+			    }
+
+					return 1;
+
+			} else {
+				return 0;
+
+			}		
+	}
 	
 	function checkForDuplucatedLike(){
 
