@@ -49,7 +49,7 @@
 <?php if($_SESSION['fnbt']['id'] == "PF-B1-LTM-0001"){ ?>
 			<img class="center-img fbpage-img" src="/media/clients/centinela/like.png" class="img-responsive img-thumbnail center-block" alt="Cinque Terre">
 <?php } else { ?>
-			<img class="center-img fbpage-img" src="https://graph.facebook.com/<?php echo $_SESSION['fnbt']['config']['link'];?>/picture?type=large" class="img-responsive img-thumbnail center-block" alt="Cinque Terre">
+			<img class="center-img fbpage-img" src="/media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.jpg" class="img-responsive img-thumbnail center-block" alt="Cinque Terre">
 
 <?php } ?>
 		</div>

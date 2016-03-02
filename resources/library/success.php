@@ -26,7 +26,7 @@
 	<div class="container-fluid blue" style="height: 100%; width: 100%">
 		<div id="upper-div" style="height: 75%;" class="blue">
 		<div class="div-wrapper full">
-			<img class="center-img success-img" src="images/success.png">
+			<img class="center-img success-img" src="media/clients/<?php echo $_SESSION['site']['dir'] ?>/success.png">
 			<p class="center-align " style="z-index: 2; position: relative; bottom: 40%;"><?php echo timeStamp(); ?></p>
 		</div>
 		</div>
