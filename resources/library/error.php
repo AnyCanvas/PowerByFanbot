@@ -25,11 +25,11 @@
 
 	<div class="container-fluid">
 
-	 <?php if($_SESSION['fnbt']['id'] != "PF-B1-LTM-0001"){ ?>
+
 
 	<!-- Fanbot logo columns-->
 	  <div class="center-block" style="width: 220px; height: 415px; padding-top: 50%">
-	    	<img class="img-responsive" alt="Fanbot" src="../../media/images/<?php switch ($_SESSION['error']){
+	    	<img class="img-responsive" alt="Fanbot" src="../../media/clients/<?php echo $_SESSION['site']['dir'] ?><?php switch ($_SESSION['error']){
 				case 0:
 		    	   echo 'upss.png';
 				   break;
@@ -44,11 +44,6 @@
 			?>">
 	  </div>
 
-	  <?php } else {?>
-	  <div class="center-block" style="width: 220px; height: 415px; padding-top: 50%">
-	    <img class="img-responsive" alt="Fanbot" src="media/clients/centinela/upss.jpg">
-	  </div>
-	  <?php }?>
 
 	</div>
 </body>
