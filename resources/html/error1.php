@@ -19,7 +19,7 @@
 <?php } else { ?>
 
 	<div class="container-fluid red accent-2" style="height: 100%; width: 100%">
-		<div id="upper-div" class="red accent-2" style=" height: 75%; background-image: url(./images/clients/<?php echo $_SESSION['site']['dir'] ?>/error1.png); background-repeat: no-repeat; background-position: center bottom; background-size: auto 60%;">
+		<div id="upper-div" class="red accent-2" style=" height: 75%; background-image: url(/images/clients/<?php echo $_SESSION['site']['dir'] ?>/error1.png); background-repeat: no-repeat; background-position: center bottom; background-size: auto 60%;">
 		</div>
 	    <footer style="height: 25%;" class="red accent-2">
 
