@@ -16,7 +16,7 @@
 	</script>
 
 	<div class="container-fluid">		
-		<div id="upper-div" style="height: 74vh; width: 100vw; background-color: <?php echo $_SESSION['site']['dir'] ?>;">
+		<div id="upper-div" style="height: 74vh; width: 100vw; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 		<div class="div-wrapper full login-img" style="background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/login.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		</div>
 		</div>
