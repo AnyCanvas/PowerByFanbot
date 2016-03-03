@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<div id="upper-div" style="height: 75%;" class="blue">
-		<div class="div-wrapper full" style="background-color: <?php echo $_SESSION['fnbt']['config']["bgcolor"] ?>;">
+		<div class="div-wrapper full" style="background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 			<img class="center-img fbpage-img" src="/media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png" class="img-responsive img-thumbnail center-block" alt="Cinque Terre">
 		</div>
 		</div>

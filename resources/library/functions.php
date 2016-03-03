@@ -294,6 +294,7 @@
 			    			        
 		        $_SESSION['site']['dir'] = $row["dir"];
 		        $_SESSION['site']['name'] = $row["name"];
+		        $_SESSION['site']['bgcolor'] = $row["bgcolor"];
 			    }
 
 					return 1;
