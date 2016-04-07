@@ -12,7 +12,6 @@
 		<div class="container-fluid" style="height: 100%; width: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 		<div class="div-wrapper full">
 			<img class="center-img success-img" src="media/clients/<?php echo $_SESSION['site']['dir'] ?>/success.png">
-			<p class="center-align " style="z-index: 2; position: relative; bottom: 40%;"><?php echo timeStamp(); ?></p>
 		</div>
 		</div>
 	    <footer style="height: 25%; padding-top: 17.5vh;" style="background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
@@ -20,7 +19,7 @@
 			  <a class="waves-effect waves-light btn white black-text btn-full teal accent-2" href="http://fanbot.me/">
 			<i class="material-icons left">arrow_forward</i>CONOCE FANBOT</a>
 		    </div> -->
-			  <a class="waves-effect waves-light btn white black-text btn-centered teal accent-2" href="http://facebook.com/fanbotme"><i class="material-icons left">arrow_forward</i>CONOCE FANBOT</a>
+			  <a class="waves-effect waves-light btn white-text btn-centered red darken-3"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
 
 	    </footer>
 
