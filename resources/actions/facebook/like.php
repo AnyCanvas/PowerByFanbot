@@ -45,8 +45,6 @@
 			</div>
 		</div>
 		<div id="upper-div" style="height: 75%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
-		<div class="div-wrapper full" style=" background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
-		</div>
 		</div>
 	    <footer style="height: 25%;">
 		      <p class="fnbt-name-text grey-text">Presiona “Me Gusta”<br>para accionar la máquina.<p>
