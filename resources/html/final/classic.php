@@ -8,11 +8,8 @@
 
     <body>
 
-	<div class="container-fluid blue" style="height: 100%; width: 100%">
-		<div class="container-fluid" style="height: 100%; width: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
-		<div class="div-wrapper full">
-			<img class="center-img success-img" src="media/clients/<?php echo $_SESSION['site']['dir'] ?>/success.png">
-		</div>
+	<div class="container-fluid" style="height: 100%; width: 100%">
+		<div id="upper-div" style="height: 75%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		</div>
 	    <footer style="height: 25%; padding-top: 17.5vh;" style="background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 <!--		    <div class="btn-full-div">
