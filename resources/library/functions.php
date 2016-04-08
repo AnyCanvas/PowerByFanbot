@@ -351,7 +351,7 @@
 	function fanbotStatus($deviceId, $accesToken){
 		
 		
-		if ($_SESSION['fnbt']["deviceId"] == 'NULL'){
+		if ($_SESSION['fnbt']["deviceId"] == 'NA'){
 
 			return 1;			
 
