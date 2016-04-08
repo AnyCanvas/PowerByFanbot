@@ -382,6 +382,12 @@
 
 	function fanbotAction($deviceId, $accesToken){
 		
+
+		if ($_SESSION['fnbt']["deviceId"] == 'NA'){
+
+			return 1;			
+
+		} else {
 		$ip = 'api.particle.io';
 		$ch = curl_init("https://". $ip ."/v1/devices/". $deviceId.  "/?access_token=". $accesToken);
 		curl_setopt($ch, CURLOPT_FRESH_CONNECT, 1);
@@ -408,6 +414,8 @@
 				return 1;
 		} else{
 			return 0;
+		}
+		
 		} 
 	
 	}
