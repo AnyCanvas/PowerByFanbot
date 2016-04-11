@@ -13,7 +13,7 @@
 		if (checkForDuplucatedLike()){
 			$deviceId = $_SESSION['fnbt']["deviceId"];
 			$accesToken = $_SESSION['fnbt']['accesToken'];
-			if($_SESSION['fnbt']["deviceId"] != NULL ){
+			if($_SESSION['fnbt']["deviceId"] != 'NA' ){
 				fanbotAction( $deviceId, $accesToken);
 				require_once("resources/html/final/classic.php");
 			} else {
