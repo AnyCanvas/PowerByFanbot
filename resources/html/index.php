@@ -45,8 +45,7 @@
 				} else if (browserAgent.indexOf("Android") > -1){
 					if (browserAgent.indexOf("Android 5") > -1 || browserAgent.indexOf("Android 6") > -1){
 						console.log("Android lollipop detected");
-						document.location.href = 'openapp.php';	
-						$('#indexModal').modal('show');
+						document.location.href = 'node.php';	
 					} else if (browserAgent.indexOf("Android 4.4") > -1){
 						console.log("Android Kitkat detected");
 						document.location.href = 'node.php';	
