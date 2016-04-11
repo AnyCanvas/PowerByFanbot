@@ -41,7 +41,7 @@
 			if(referrer.indexOf("facebook") <= -1 ){
 				if (browserAgent.indexOf("iPhone") > -1){
 					console.log("iPhone detected");
-					document.location.href = 'openapp.php';
+						document.location.href = 'node.php';	
 				} else if (browserAgent.indexOf("Android") > -1){
 					if (browserAgent.indexOf("Android 5") > -1 || browserAgent.indexOf("Android 6") > -1){
 						console.log("Android lollipop detected");
