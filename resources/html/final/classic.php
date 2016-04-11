@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
 	<title>¡Bravo!</title>
 	<?php require_once( "resources/html/header.php" ); ?>
   	<script>
 	  	ga("send", "event", "<?php echo $_SESSION['fnbt']['id']; ?>", "step 3", "<?php echo $_SESSION['fnbt']['config']['type'];?> success");
   	</script>
-
     <body>
 
 	<div class="container-fluid" style="height: 100%; width: 100%">
@@ -13,7 +10,6 @@
 		</div>
 	    <footer style="height: 25%; padding-top: 17.5vh;" style="background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 			  <a class="waves-effect waves-light btn white-text btn-centered red darken-3"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
-
 	    </footer>
 
 	</div>
