@@ -2,6 +2,10 @@
 	<?php require_once( "resources/html/header.php" ); ?>
   	<script>
 	  	ga("send", "event", "<?php echo $_SESSION['fnbt']['id']; ?>", "step 3", "<?php echo $_SESSION['fnbt']['config']['type'];?> success");
+	    showModal(){
+		  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		  $('#modalShop').openModal();
+		};
   	</script>
     <body>
 
@@ -13,12 +17,6 @@
 	</div>
 	
     <!-- Modal Shop -->
-    <script>
-	     showModal(){
-		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-		    $('#modalShop').openModal();
-		  };
-	</scipt>
     <div id="modalShop" class="modal bottom-sheet">
       <div class="modal-content">
         <h4>Modal Header</h4>
