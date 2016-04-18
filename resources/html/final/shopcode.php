@@ -19,8 +19,8 @@
     <!-- Modal Shop -->
     <div id="modalShop" class="modal bottom-sheet">
       <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4>Introduce el código de la tienda</h4>
+        <input placeholder="Codigo" id="shopCode" type="text">
       </div>
       <div class="modal-footer">
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
