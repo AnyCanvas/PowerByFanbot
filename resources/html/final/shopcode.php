@@ -3,8 +3,13 @@
   	<script>
 	  	ga("send", "event", "<?php echo $_SESSION['fnbt']['id']; ?>", "step 3", "<?php echo $_SESSION['fnbt']['config']['type'];?> success");
 	    function showModal(){
-		  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 		  $('#modalShop').openModal();
+		}
+		
+		function hideModal(){
+		  if($("#shopCode").val() == "F4M2"){
+		    $('#modalShop').closeModal();
+		    }		
 		}
   	</script>
     <body>
@@ -23,7 +28,7 @@
         <input placeholder="Codigo" id="shopCode" type="text">
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat" onclick="hideModal();">Aceptar</a>
       </div>
     </div>
     </body>
