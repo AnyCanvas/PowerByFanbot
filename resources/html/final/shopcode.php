@@ -9,7 +9,7 @@
 		function hideModal(){
 		  if($("#shopCode").val() == "F4M2"){
 		    $('#modalShop').closeModal();
-		    }		
+		  }
 		}
   	</script>
     <body>
@@ -28,7 +28,7 @@
         <input placeholder="Codigo" id="shopCode" type="text">
       </div>
       <div class="modal-footer">
-        <a class=" modal-action modal-close waves-effect waves-green btn-flat" onclick="hideModal();">Aceptar</a>
+        <a class="waves-effect waves-green btn-flat" onclick="hideModal();">Aceptar</a>
       </div>
     </div>
     </body>
