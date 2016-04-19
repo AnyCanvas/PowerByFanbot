@@ -256,6 +256,7 @@
 		        $_SESSION['fnbt']['accesToken'] = $row["accesToken"];
 		        $_SESSION['fnbt']['deviceId'] = $row["deviceId"];
 		        $_SESSION['fnbt']['plan'] = $row["plan"];
+		        $_SESSION['fnbt']['credit'] = $row["credit"];
 		        $_SESSION['fnbt']['status'] = $row["estatus"];
 		        $_SESSION['fnbt']['config'] = json_decode($row["config"], true);
 
