@@ -457,8 +457,6 @@
 		$password = $config["db"]["fanbot"]["password"];
 		$dbname = $config["db"]["fanbot"]["dbname"];
 
-		
-			
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
