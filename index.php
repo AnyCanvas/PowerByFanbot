@@ -1,6 +1,6 @@
 <?php
 	include 'resources/library/functions.php'; 
-//	session_start();
+	session_start();
 
 //	getSiteInfo($_SERVER['HTTP_HOST']);
 
