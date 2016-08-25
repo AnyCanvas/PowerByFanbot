@@ -457,6 +457,8 @@
 		$password = $config["db"]["fanbot"]["password"];
 		$dbname = $config["db"]["fanbot"]["dbname"];
 
+		
+			
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
@@ -469,7 +471,6 @@
 
 		$conn->close();
 		
-		exit();
 		if ($result->num_rows > 0) {		    
 		    while($row = $result->fetch_assoc()) {
 			    			        

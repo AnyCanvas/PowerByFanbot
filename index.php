@@ -1,7 +1,7 @@
 <?php
 	include 'resources/library/functions.php'; 
 	session_start();
-
+	
 	getSiteInfo($_SERVER['HTTP_HOST']);
 
 	if( $_SESSION['site']['name'] != NULL ){
@@ -17,10 +17,10 @@
 <html>
 <head>
 
-<?php  require_once( "resources/html/header.php" ); ?>
+<?php require_once( "resources/html/header.php" ); ?>
 	<title>Bienvenido a Fanbot</title>
 </head>
 
-<?php  require_once( "resources/html/index.php" ); ?>
+<?php require_once( "resources/html/index.php" ); ?>
 
 </html>
