@@ -1,7 +1,7 @@
 <?php
 	include 'resources/library/functions.php'; 
 	session_start();
-	exit();	
+
 	getSiteInfo($_SERVER['HTTP_HOST']);
 
 	if( $_SESSION['site']['name'] != NULL ){
