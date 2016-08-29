@@ -8,13 +8,9 @@
 		}	
 	</script>
 	<div class="container-fluid" style="height: 100%; width: 100%">
-		<div id="upper-div" style="height: 75%;" class="blue">
-		<div class="div-wrapper full" style="background-color: <?php echo $_SESSION['fnbt']['config']["bgcolor"] ?>;">
-
-			<img class="center-img" src="https://graph.facebook.com/<?php echo $_SESSION['fnbt']['config']['link'];?>/picture?type=large" class="img-responsive img-thumbnail center-block" style="width: 30vh; top: 25vh !important; position: relative;" alt="Cinque Terre">
-			
+		<div id="upper-div" style="height: 65%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		<div class="center-align white-text" style="margin-top: 46%;">
-			Bienvenido a Wingman<br><span style="font-weight: lighter;">Obtén recomensas por cada visita.</span>
+			Bienvenido a Wingman<br><span style="font-weight: lighter;">Obtén recompensas por cada visita.</span>
 		</div>
 
 		</div>
