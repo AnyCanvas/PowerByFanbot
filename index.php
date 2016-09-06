@@ -2,6 +2,7 @@
 	include 'resources/library/functions.php'; 
 	session_start();
 	
+	echo ($_SERVER['HTTP_HOST']);
 	getSiteInfo($_SERVER['HTTP_HOST']);
 
 	if( $_SESSION['site']['name'] != NULL ){
