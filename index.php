@@ -1,6 +1,5 @@
 <?php
 
-	echo ($_SERVER['HTTP_HOST']);
 	include 'resources/library/functions.php'; 
 	session_start();
 	
