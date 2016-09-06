@@ -1,4 +1,7 @@
 <?php
+
+	echo ($_SERVER['HTTP_HOST']);
+	exit();
 	include 'resources/library/functions.php'; 
 	session_start();
 	
@@ -21,6 +24,6 @@
 	<title>Bienvenido a Fanbot</title>
 </head>
 
-<?php echo ($_SERVER['HTTP_HOST']); require_once( "resources/html/index.php" ); ?>
+<?php  require_once( "resources/html/index.php" ); ?>
 
 </html>
