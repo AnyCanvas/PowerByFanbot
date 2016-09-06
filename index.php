@@ -2,7 +2,6 @@
 	include 'resources/library/functions.php'; 
 	session_start();
 	
-	echo ($_SERVER['HTTP_HOST']);
 	getSiteInfo($_SERVER['HTTP_HOST']);
 
 	if( $_SESSION['site']['name'] != NULL ){
@@ -18,7 +17,8 @@
 <html>
 <head>
 
-<?php require_once( "resources/html/header.php" ); ?>
+<?php 	echo ($_SERVER['HTTP_HOST']);
+		require_once( "resources/html/header.php" ); ?>
 	<title>Bienvenido a Fanbot</title>
 </head>
 
