@@ -62,7 +62,6 @@
 					document.location.href = 'node.php';
 			  	}
 		}
-		document.location.href = 'node.php';	
 			});
 			};
 		(function(d, s, id) {
