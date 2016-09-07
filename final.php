@@ -13,7 +13,7 @@
 		if ( $_SESSION['error'] != "name" ){
 			$deviceId = $_SESSION['fnbt']["deviceId"];
 			$accesToken = $_SESSION['fnbt']['accesToken'];
-			if($_SESSION['fnbt']["deviceId"] != 'NA' ){
+			if($_SESSION['fnbt']["name"] != 'mich' ){
 				fanbotAction( $deviceId, $accesToken);
 				require_once("resources/html/final/classic.php");
 			} else {
