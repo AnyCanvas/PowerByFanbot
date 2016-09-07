@@ -1,6 +1,6 @@
 <?php
-	session_start();
 	require 'resources/library/functions.php';
+	session_start();
 
 ?>
 <!DOCTYPE html>
@@ -9,8 +9,8 @@
 
 <?php
 
-	if (isset($_SESSION['fnbt']['config']['type']))	{
-		if (checkForDuplucatedLike()){
+	if (isset($_SESSION['fnbt']['config']))	{
+		if ( $_SESSION['error'] != "name" ){
 			$deviceId = $_SESSION['fnbt']["deviceId"];
 			$accesToken = $_SESSION['fnbt']['accesToken'];
 			if($_SESSION['fnbt']["deviceId"] != 'NA' ){
@@ -19,7 +19,9 @@
 			} else {
 				require_once("resources/html/final/shopcode.php");
 			}
-			saveUserDataToDB();
+			if($_SESSION['action'] == 'rate'){
+				$_SESSION['data'] = '{"q":"'. $_SESSION['q'] .'","a":"'. $_GET['a'] .'"}';
+			}
 			saveInteractionToDB();
 		} else {
 				require_once("resources/html/error1.php");

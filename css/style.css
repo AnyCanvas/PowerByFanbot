@@ -25,7 +25,7 @@ body {
 }
 
 .div-wrapper img {
-    top: 55%;
+    top: 45%;
 }
 
 .full{
@@ -36,12 +36,12 @@ body {
 .button-div{
     z-index: 5;
     left: 67%;
-    top: 88%;
+    top: 70%;
     position: absolute;
 }
 
 .button-div-iphone-fix{
-    top: 75vh !important;
+    top: 80vh !important;
 }
 
 .img-fix{
@@ -62,7 +62,8 @@ body {
     text-align: center;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
     font-size: xx-large !important;
-    text-transform: uppercase;
+    text-transform: lowercase;
+	min-height: 46px;
 }
 
 .fnbt-name-text {
@@ -94,8 +95,8 @@ body {
 }
 
 .fbpage-img{
-	width: 100vh;
-    top: 29vh !important;
+	width: 30vh;
+    top: 20vh !important;
     position: relative;
 }
 

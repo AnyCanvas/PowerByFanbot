@@ -61,7 +61,7 @@
 					console.log("Facebook app to Chrome");
 					document.location.href = 'node.php';
 			  	}
-		}	
+		}
 			});
 			};
 		(function(d, s, id) {
