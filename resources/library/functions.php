@@ -74,7 +74,7 @@
 		$permissions = ['public_profile,user_friends,email,user_friends,publish_actions']; // Optional permissions
 		$loginUrl = $helper->getLoginUrl($config["urls"]["baseUrl"], $permissions);
 		
-		return '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+		return htmlspecialchars($loginUrl);
 	}
 
 	function fbCode2token($code){
