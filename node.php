@@ -32,7 +32,7 @@
 												
 					    	if(isset($_GET["token"])){
 						    	$tokenArray['access_token'] = $_GET["token"];
-						    	$token = $object = json_decode(json_encode($tokenArray), FALSE);			    	
+						    	$token = $_GET["token"];			    	
 						    	getUserFbInfo($token);
 								saveUserDataToDB();
 						    } else if(isset($_GET["code"])){

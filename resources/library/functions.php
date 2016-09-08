@@ -24,7 +24,7 @@
 		  //'default_access_token' => '{access-token}', // optional
 		]);
 		
-		$fb->setDefaultAccessToken( $token->{'access_token'} );
+		$fb->setDefaultAccessToken( $token );
 		// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 		//   $helper = $fb->getRedirectLoginHelper();
 		//   $helper = $fb->getJavaScriptHelper();
