@@ -59,6 +59,22 @@
 	}
 
 
+
+	function fbLoginLink(){
+		$fb = new Facebook\Facebook([
+		  'app_id' => $config["fbApp"]["appId"],
+		  'app_secret' => $config["fbApp"]["appSecret"],
+		  'default_graph_version' => 'v2.6',
+		  ]);
+		
+		$helper = $fb->getRedirectLoginHelper();
+		
+		$permissions = ['public_profile,user_friends,email,user_friends,publish_actions']; // Optional permissions
+		$loginUrl = $helper->getLoginUrl($config["urls"]["baseUrl"], $permissions);
+		
+		return '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
+	}
+
 	function fbCode2token($code){
 
 		require(realpath(dirname(__FILE__) . "/../config.php"));		
