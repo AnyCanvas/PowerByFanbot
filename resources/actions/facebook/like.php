@@ -61,7 +61,7 @@
 		</div>
 	    <footer style="height: 45vh;">
 			  <div id="fblike-div">
-			      <p class="fnbt-name-text grey-text">Presiona “Me Gusta”<br>para accionar la máquina.</p>
+			      <p class="fnbt-name-text grey-text">Presiona “Me Gusta”<br>para continuar.</p>
 				  <div class="like-div" style="overflow: hidden;">
 					  <div class="fb-like" 
 						   data-href="https://www.facebook.com/<?php echo $_SESSION['fnbt']['config']['link'];?>"
