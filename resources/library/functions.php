@@ -71,7 +71,7 @@
 		
 		$helper = $fb->getRedirectLoginHelper();
 		
-		$permissions = [$scopes]; // Optional permissions
+		$permissions = $scopes; // Optional permissions
 		$loginUrl = $helper->getLoginUrl('http://'. $_SERVER['HTTP_HOST'] .'/node.php', $permissions);		
 
 		return $loginUrl;

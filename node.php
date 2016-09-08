@@ -10,9 +10,9 @@
 
 
 <?php
-    $loginUrl = fbLoginLink('public_profile,user_friends,email,user_friends');	
+    $loginUrl = fbLoginLink(['public_profile,user_friends,email,user_friends']);	
 
-	$postCodeUrl = fbLoginLink('publish_actions');
+	$postCodeUrl = fbLoginLink(['publish_actions']);
 
 
 			if(isset($_SESSION['page'])){
