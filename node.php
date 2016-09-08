@@ -12,7 +12,7 @@
 <?php
     $loginUrl = fbLoginLink();	
 
-	$postCodeUrl = 'https://www.facebook.com/dialog/oauth?client_id='.$config["fbApp"]["appId"].'&redirect_uri='.$config["urls"]["baseUrl"].'/node.php&scope=publish_actions&response_type=code';
+	$postCodeUrl = fbLoginLink();
 
 
 			if(isset($_SESSION['page'])){
