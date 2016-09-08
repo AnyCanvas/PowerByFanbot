@@ -72,8 +72,8 @@
 		$helper = $fb->getRedirectLoginHelper();
 		
 		$permissions = ['public_profile,user_friends,email,user_friends,publish_actions']; // Optional permissions
-		$loginUrl = $helper->getLoginUrl($config["urls"]["baseUrl"]. 'node.php', $permissions);
-		
+		$loginUrl = $helper->getLoginUrl('https://'. $_SERVER['HTTP_HOST'] .'/node.php', $permissions);		
+
 		return $loginUrl;
 	}
 
