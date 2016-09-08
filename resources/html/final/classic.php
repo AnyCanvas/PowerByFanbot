@@ -19,8 +19,6 @@
 			  <a class="waves-effect waves-light btn white black-text btn-full teal accent-2" href="http://fanbot.me/">
 			<i class="material-icons left">arrow_forward</i>CONOCE FANBOT</a>
 		    </div> -->
-			  <a class="waves-effect waves-light btn white black-text btn-centered teal accent-2" href="http://facebook.com/fanbotme"><i class="material-icons left">arrow_forward</i>CONOCE FANBOT</a>
-
 	    </footer>
 
 	</div>
