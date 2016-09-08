@@ -24,7 +24,7 @@
 		  //'default_access_token' => '{access-token}', // optional
 		]);
 		
-		$fb->setDefaultAccessToken( $token->{'access_token'} );
+		$fb->setDefaultAccessToken( $token );
 		// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 		//   $helper = $fb->getRedirectLoginHelper();
 		//   $helper = $fb->getJavaScriptHelper();
@@ -114,7 +114,7 @@
 		  exit;
 		}
 				
-		return $accessToken;
+		return (string) $accessToken;
 	}
 
     // Get fbPage name for various uses in the app
@@ -140,7 +140,7 @@
 		]);
 		
 		$token = fbCode2token($code);
-		$fb->setDefaultAccessToken( $token->{'access_token'} );
+		$fb->setDefaultAccessToken( $token );
 
 		$pageJson = file_get_contents('https://graph.facebook.com/'. $_SESSION['fnbt']['config']['link'] .'?fields=location&access_token=1498446833779418|6Uo2HajAgYUiIE0x8DR1AXuhxbw');
 		$pageArray = json_decode($pageJson, true);
