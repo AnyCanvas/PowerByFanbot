@@ -59,16 +59,62 @@
 	}
 
 
+
+	function fbLoginLink(){
+
+		require(realpath(dirname(__FILE__) . "/../config.php"));		
+		$fb = new Facebook\Facebook([
+		  'app_id' => $config["fbApp"]["appId"],
+		  'app_secret' => $config["fbApp"]["appSecret"],
+		  'default_graph_version' => 'v2.6',
+		  ]);
+		
+		$helper = $fb->getRedirectLoginHelper();
+		
+		$permissions = ['public_profile,user_friends,email,user_friends,publish_actions']; // Optional permissions
+		$loginUrl = $helper->getLoginUrl('http://'. $_SERVER['HTTP_HOST'] .'/node.php', $permissions);		
+
+		return $loginUrl;
+	}
+
 	function fbCode2token($code){
 
 		require(realpath(dirname(__FILE__) . "/../config.php"));		
+		$fb = new Facebook\Facebook([
+		  'app_id' => $config["fbApp"]["appId"],
+		  'app_secret' => $config["fbApp"]["appSecret"],
+		  'default_graph_version' => 'v2.6',
+		  ]);
 
-		// Get de JSON text containing the token 
-		$codeToToken = file_get_contents('https://graph.facebook.com/v2.3/oauth/access_token?client_id='.$config["fbApp"]["appId"].'&redirect_uri='.$config["urls"]["baseUrl"].'/node.php&client_secret='.$config["fbApp"]["appSecret"].'&code='. $code);
+		$helper = $fb->getRedirectLoginHelper();
 
-		$token = json_decode($codeToToken);
+		try {
+		  $accessToken = $helper->getAccessToken();
+		} catch(Facebook\Exceptions\FacebookResponseException $e) {
+		  // When Graph returns an error
+		  echo 'Graph returned an error: ' . $e->getMessage();
+		  exit;
+		} catch(Facebook\Exceptions\FacebookSDKException $e) {
+		  // When validation fails or other local issues
+		  echo 'Facebook SDK returned an error: ' . $e->getMessage();
+		  exit;
+		}
 		
-		return $token;
+		if (! isset($accessToken)) {
+		  if ($helper->getError()) {
+		    header('HTTP/1.0 401 Unauthorized');
+		    echo "Error: " . $helper->getError() . "\n";
+		    echo "Error Code: " . $helper->getErrorCode() . "\n";
+		    echo "Error Reason: " . $helper->getErrorReason() . "\n";
+		    echo "Error Description: " . $helper->getErrorDescription() . "\n";
+		  } else {
+		    header('HTTP/1.0 400 Bad Request');
+		    echo 'Bad request';
+		  }
+		  exit;
+		}
+				
+		return (string) $accessToken;
 	}
 
     // Get fbPage name for various uses in the app
@@ -94,7 +140,7 @@
 		]);
 		
 		$token = fbCode2token($code);
-		$fb->setDefaultAccessToken( $token->{'access_token'} );
+		$fb->setDefaultAccessToken( $token );
 
 		$pageJson = file_get_contents('https://graph.facebook.com/'. $_SESSION['fnbt']['config']['link'] .'?fields=location&access_token=1498446833779418|6Uo2HajAgYUiIE0x8DR1AXuhxbw');
 		$pageArray = json_decode($pageJson, true);

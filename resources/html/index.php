@@ -14,6 +14,7 @@
 		    FB.init({
 		      appId      : '<?php echo $config["fbApp"]["appId"]; ?>',
 		      xfbml      : true,
+			  cookie: true,
 		      version    : 'v2.4'
 		    });
 		    
