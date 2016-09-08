@@ -114,7 +114,7 @@
 		  exit;
 		}
 				
-		return $accessToken->getValue();
+		return $accessToken;
 	}
 
     // Get fbPage name for various uses in the app
