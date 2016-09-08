@@ -61,6 +61,8 @@
 
 
 	function fbLoginLink(){
+
+		require(realpath(dirname(__FILE__) . "/../config.php"));		
 		$fb = new Facebook\Facebook([
 		  'app_id' => $config["fbApp"]["appId"],
 		  'app_secret' => $config["fbApp"]["appSecret"],
