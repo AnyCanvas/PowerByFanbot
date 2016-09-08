@@ -60,7 +60,7 @@
 
 
 
-	function fbLoginLink(){
+	function fbLoginLink($scopes){
 
 		require(realpath(dirname(__FILE__) . "/../config.php"));		
 		$fb = new Facebook\Facebook([
@@ -71,7 +71,7 @@
 		
 		$helper = $fb->getRedirectLoginHelper();
 		
-		$permissions = ['public_profile,user_friends,email,user_friends,publish_actions']; // Optional permissions
+		$permissions = [$scopes]; // Optional permissions
 		$loginUrl = $helper->getLoginUrl('http://'. $_SERVER['HTTP_HOST'] .'/node.php', $permissions);		
 
 		return $loginUrl;
