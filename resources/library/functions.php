@@ -7,7 +7,7 @@
 
 //////////////////// Facebook sdk functions start  ////////////////////
 
-	function getUserFbInfo($token){
+	function getUserFbInfo($code){
 
 
 		require(realpath(dirname(__FILE__) . "/../config.php"));		
@@ -24,7 +24,8 @@
 		  //'default_access_token' => '{access-token}', // optional
 		]);
 		
-		$fb->setDefaultAccessToken( $token->{'access_token'} );
+		$token = fbCode2token($code);
+		$fb->setDefaultAccessToken( $token);
 		// Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 		//   $helper = $fb->getRedirectLoginHelper();
 		//   $helper = $fb->getJavaScriptHelper();
