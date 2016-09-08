@@ -30,7 +30,7 @@
 		    console.log('logged and authorized');
 		    var uid = response.authResponse.userID;
 		    var accessToken = response.authResponse.accessToken;
-			document.location.href = <?php fbLoginLink() ?>;	
+			document.location.href = <?php echo fbLoginLink() ?>;	
 		  } else if (response.status === 'not_authorized') {
 		    console.log('logged');
 		    ga('send', 'event', "step 0", 'facebook login status', 'logged');
