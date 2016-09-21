@@ -13,11 +13,17 @@
 		if ( $_SESSION['error'] != "name" ){
 			$deviceId = $_SESSION['fnbt']["deviceId"];
 			$accesToken = $_SESSION['fnbt']['accesToken'];
-			if($_SESSION['fnbt']["name"] != 'mich' ){
-				fanbotAction( $deviceId, $accesToken);
-				require_once("resources/html/final/classic.php");
-			} else {
+			if($_SESSION['site']['prize'] == 'image' ){
 				require_once("resources/html/final/shopcode.php");
+			} else if($_SESSION['site']['prize'] == 'qr' ) 
+			{
+				require_once("resources/html/final/qrcode.php");
+			} else if($_SESSION['site']['prize'] == 'bar' )
+			{
+				require_once("resources/html/final/barcode.php");
+			} else {
+				fanbotAction( $deviceId, $accesToken);
+				require_once("resources/html/final/classic.php");				
 			}
 			if($_SESSION['action'] == 'rate'){
 				$_SESSION['data'] = '{"q":"'. $_SESSION['q'] .'","a":"'. $_GET['a'] .'"}';

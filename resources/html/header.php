@@ -13,4 +13,6 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="/js/materialize.js"></script>
       <script src="js/common.js"></script>
+	  <script type="text/javascript" src="js/qrcode.min.js"></script>
+	  <script type="text/javascript" src="js/JsBarcode.all.min.js"></script>
       <base href=" <?php echo $config["urls"]["baseUrl"]; ?> " target="_self">
