@@ -15,4 +15,3 @@
       <script src="/js/common.js"></script>
 	  <script type="text/javascript" src="/js/qrcode.min.js"></script>
 	  <script type="text/javascript" src="/js/JsBarcode.all.min.js"></script>
-      <base href=" <?php echo $config["urls"]["baseUrl"]; ?> " target="_self">
