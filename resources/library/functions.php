@@ -310,7 +310,7 @@
 		        $_SESSION['fnbt']['plan'] = $row["plan"];
 		        $_SESSION['fnbt']['status'] = $row["estatus"];
 		        $_SESSION['fnbt']['config'] = json_decode($row["config"], true);
-
+				$_SESSION['fnbt']['credit'] = $row["credit"];
 				if ( $_SESSION['fnbt']['config']['type'] == 'rate' ){
 					$_SESSION['fnbt']['data'] = json_decode($row["survey"],true);
 					
@@ -523,6 +523,8 @@
 		        $_SESSION['site']['dir'] = $row["dir"];
 		        $_SESSION['site']['name'] = $row["name"];
 		        $_SESSION['site']['bgcolor'] = $row["bgcolor"];
+		        $_SESSION['site']['prize'] = $row["prize"];
+
 			    }
 
 					return 1;
