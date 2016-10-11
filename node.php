@@ -1,6 +1,7 @@
 <?php
 	include 'resources/library/functions.php'; 
 	session_start();
+	echo $_SERVER['HTTP_HOST'];
 
 	?>
 <!DOCTYPE html>

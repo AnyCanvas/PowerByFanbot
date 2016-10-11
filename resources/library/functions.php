@@ -521,7 +521,7 @@
 		    while($row = $result->fetch_assoc()) {
 			    			        
 		        $_SESSION['site']['dir'] = $row["dir"];
-		        $_SESSION['site']['name'] = $url;
+		        $_SESSION['site']['name'] = $row["name"];
 		        $_SESSION['site']['bgcolor'] = $row["bgcolor"];
 		        $_SESSION['site']['prize'] = $row["prize"];
 
