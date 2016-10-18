@@ -399,8 +399,8 @@
 	}
 	
 	function checkInteraction(){
-		if ($_SESSION['fnbt']['config']['type'] == 'like' && notLiked() ){
-			$_SESSION['action'] = 'like';
+		if ($_SESSION['fnbt']['config']['type'] == 'like' && notChekedin()){
+			$_SESSION['action'] = 'post';
 			return TRUE;		
 		} else if ($_SESSION['fnbt']['config']['type'] == 'post' && notLiked()  ){
 			$_SESSION['action'] = 'like';

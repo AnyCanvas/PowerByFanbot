@@ -18,8 +18,8 @@
 	<div class="container-fluid" style="height: 100%; width: 100%">
 
 <?php if( ($_SESSION['fnbt']['credit'] % 4) != 0){ ?>
-		<div id="upper-div" style="height: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/success.png); background-repeat: no-repeat; background-position: center top; background-size: 100% auto;">
-		<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px;"></div>
+		<div id="upper-div" style="height: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
+		<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
 
 	    <a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
 		</div>
