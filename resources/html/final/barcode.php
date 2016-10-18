@@ -33,7 +33,8 @@
 		jsbarcode-value="123456789010"
 		jsbarcode-format="ean13"
 		jsbarcode-textMargin="0"
-		jsbarcode-lineColor="#00" sty>
+		jsbarcode-lineColor="#00"
+		style="display: block; margin: auto; margin-top: 10vh;" sty>
 	</svg>
 
 	    <a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
