@@ -50,7 +50,28 @@
 				
 			}
 	</script>
-    </body>
+<?php if( $_SESSION['site']['dir'] == "pano"){
+	?>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Selecciona tu edad para continuar</h4>
+		  <div class="row">
+		    <div class="input-field col s6">
+			  <input id="date" type="date" class="datepicker">
+		      <label class="active" for="date">Fecha de nacimiento</label>
+		    </div>
+		  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Continuar</a>
+    </div>
+  </div></script>	
+	<?php
+}
+	
+?>
+    </body>    
 
   </html>
 </body>
