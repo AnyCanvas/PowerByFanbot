@@ -60,7 +60,7 @@
 		    <div class="input-field col s6">
 			  <form id="ageForm">
 			  <input id="date" type="date" class="datepicker">
-		      <label class="active" for="date" min="1998-21-10">Fecha de nacimiento</label>
+		      <label class="active" for="date" min="1998-10-21">Fecha de nacimiento</label>
 			  </form>
 		    </div>
 		  </div>
