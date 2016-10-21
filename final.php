@@ -21,7 +21,8 @@
 			} else if($_SESSION['site']['prize'] == 'bar' )
 			{
 				require_once("resources/html/final/barcode.php");
-			} else {
+			} else if($_SESSION['site']['prize'] == 'classic' )
+			{
 				fanbotAction( $deviceId, $accesToken);
 				require_once("resources/html/final/classic.php");				
 			}
