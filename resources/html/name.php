@@ -74,7 +74,7 @@
 	    $('#modal1').openModal();
 	    
 	    function checkAge(){
-			var validator = $("#ageForm").validate(options);
+			var validator = $("#ageForm").validate();
 			if (validator.form()) {
 			  $('#modal1').closeModal()
 			}		    
