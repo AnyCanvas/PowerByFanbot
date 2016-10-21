@@ -4,7 +4,6 @@
 	session_start();
 	
 	getSiteInfo($_SERVER['HTTP_HOST']);
-	echo $_SERVER['HTTP_HOST'];
 
 	if( $_SESSION['site']['name'] != NULL ){
 			$_SESSION['fnbt']['name'] = $_SESSION['site']['name'];
