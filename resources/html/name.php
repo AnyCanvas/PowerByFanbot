@@ -8,7 +8,7 @@
 		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/fanbot_label.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		</div>
 	    <footer style="height: 45vh;">
-		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta Azul</p>
+		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta</p>
 		      <form action="node.php" method="get" >
 		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text"></input>
 		      </form>
