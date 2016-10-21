@@ -74,6 +74,7 @@
 	    $('#modal1').openModal();
 	    
 	    function checkAge(){
+			alert("entro");
 			$('#comment_form').submit(function(e){
 			    e.preventDefault();
 			    $('#modal1').closeModal()
