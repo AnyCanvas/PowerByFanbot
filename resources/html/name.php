@@ -5,11 +5,9 @@
 		}
 	</script>
 	<div class="container-fluid" style="height: 100%; width: 100%">
-		<div id="upper-div" style="height: 75%;" class="blue" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/fanbot_label.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
-		<div class="div-wrapper full" style="padding-top: top: 40vh !important;">
+		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/fanbot_label.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		</div>
-		</div>
-	    <footer style="height: 25%;">
+	    <footer style="height: 45vh;">
 		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta Azul</p>
 		      <form action="node.php" method="get" >
 		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text"></input>
