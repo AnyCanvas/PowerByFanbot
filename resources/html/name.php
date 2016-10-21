@@ -67,6 +67,10 @@
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Continuar</a>
     </div>
   </div></script>	
+
+  <script>
+	    $('#modal1').openModal();
+  </script>
 	<?php
 }
 	
