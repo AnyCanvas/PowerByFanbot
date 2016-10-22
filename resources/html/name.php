@@ -74,7 +74,6 @@
 	    $('#modal1').openModal();
 	    
 	    function checkAge(){
-			alert("entro");
 			d1 = new Date("October 21, 1998");
 			d2 = new Date($( "#date" ).val());
 			if(d2 <= d1){
