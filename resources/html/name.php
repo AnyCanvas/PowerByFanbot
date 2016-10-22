@@ -71,7 +71,9 @@
   </div></script>	
 
   <script>
-	    $('#modal1').openModal();
+	    $('#modal1').openModal({
+		    dismissible:false;
+	    });
 	    
 	    function checkAge(){
 			d1 = new Date("October 21, 1998");
