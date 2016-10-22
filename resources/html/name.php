@@ -75,10 +75,12 @@
 	    
 	    function checkAge(){
 			alert("entro");
-			$('#comment_form').submit(function(e){
-			    e.preventDefault();
+			d1 = new Date("October 21, 1998");
+			d2 = new Date((document.getElementById("myDate").value);
+			if(d2 <= d1){
 			    $('#modal1').closeModal()
-			});
+				
+			}
 	    }
   </script>
 	<?php

@@ -12,7 +12,7 @@
 		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 		</div>
 	    <footer style="height: 45%;">
-		      <p class="fnbt-name-text grey-text">Presiona “Compartir” para obtener tu calaverita.</p>
+		      <p class="fnbt-name-text grey-text">Presiona “Compartir” para obtener tu premio.</p>
 			  <div class="like-div" style="overflow: hidden;">
 		  			<a class="waves-effect waves-light btn fb-btn btn-centered" style=" background-color: #405A9F; font-size: 3vw;" onclick="postclick();">
 			  			<i class="mdi mdi-facebook left" style=" font-size: 4vw !important;"></i>Compartir en Facebook
