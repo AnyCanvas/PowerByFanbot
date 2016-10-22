@@ -1,3 +1,8 @@
+<?php
+	include 'resources/library/functions.php'; 
+	session_start();
+
+	?>
 <!DOCTYPE html>
 <html lang="es">
 	<title>!Upss¡</title>
@@ -13,7 +18,7 @@
     <body>
 
 
-		<div id="upper-div" style=" height: 100%; background-image: url(/media/clients/<?php echo $_SESSION['site']['dir'] ?>/error.png); background-repeat: no-repeat; background-position: center top; background-size: 100% auto; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
+		<div id="upper-div" style=" height: 75vh; background-image: url(/media/clients/<?php echo $_SESSION['site']['dir'] ?>/error.png); background-repeat: no-repeat; background-position: center top; background-size: 100% auto; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 		</div>
 	    <footer style="height: 25vh;" class="red accent-2">
 		      <p class="error-text white-text">Esa palabra no coincide<br>con la de la etiqueta.<p>
