@@ -72,7 +72,7 @@
 
   <script>
 	    $('#modal1').openModal({
-		    dismissible:false;
+		    dismissible:false
 	    });
 	    
 	    function checkAge(){
