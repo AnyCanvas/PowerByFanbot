@@ -22,7 +22,7 @@
 						<br>Esta en 
 						<span style="font-weight: bold; display: inline-block;"><?php echo getFbPageName($_SESSION['fnbt']['config']['link']);?></span>
 					</span>
-				<img class="center-img" src="images/mapa.png" style="width: 100%; padding: 10px 0px;">	
+				<img class="center-img" src="./media/clients/<?php echo $_SESSION['site']['dir'] ?>/mapa.png" style="width: 100%; padding: 10px 0px;">	
 				<div style="height: 50px; position: absolute; top: 125px;">
 					<img src="https://graph.facebook.com/<?php echo $_SESSION['fnbt']['config']['link'];?>/picture" class="white" style="height: 50px; padding: 2px; margin-left: 5px;vertical-align: bottom;">
 					<span style="font-weight: bold; font-size: smaller; padding-left: 10px;"><?php echo getFbPageName($_SESSION['fnbt']['config']['link']);?></span>
