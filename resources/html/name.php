@@ -64,7 +64,7 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <input id="date" type="text" class="datepicker">
+			  <input iid='txtDate' type="text" class="datepicker">
 		      <label class="active" for="date" max="1998-10-21">Fecha de nacimiento</label>
 			  </form>
 		    </div>
@@ -82,7 +82,7 @@
 	    
 	    function checkAge(){
 			d1 = new Date("October 21, 1998");
-			d2 = new Date($( "#date" ).val());
+			d2 = new Date($( "#txtDate" ).val());
 			if(d2 <= d1){
 			    $('#modal1').closeModal()
 				
@@ -90,7 +90,7 @@
 	    }
 	    
 		$(document).ready(function() {
-		   $('#datepicker').datepicker({
+		   $('#txtDate').datepicker({
 		     changeMonth: true,
 		     changeYear: true,
 		     dateFormat: 'MM yy',
