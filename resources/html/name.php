@@ -1,4 +1,9 @@
 <body>
+	<style>
+		.ui-datepicker-calendar {
+		    display: none;
+		}​
+	</style>
 	<script>
 		function sendName(){
 			window.location = "node.php?name=" + $("#fnbt-name-label").val();;
@@ -59,8 +64,8 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <div id="default-settings"></div>
-			  <div id="default-birthday"></div>
+			  <input id="date" type="text" class="datepicker">
+		      <label class="active" for="date" max="1998-10-21">Fecha de nacimiento</label>
 			  </form>
 		    </div>
 		  </div>
@@ -68,16 +73,46 @@
     <div class="modal-footer">
       <a href="#!" onclick="checkAge();" class="waves-effect waves-green btn-flat">Continuar</a>
     </div>
-  </div>	
+  </div></script>	
 
-	<script>
-//	    $('#modal1').openModal({
-//		    dismissible:false
-//	    });
-	$("#default-settings").birthdayPicker();	
-	$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
-
-	</script>
+  <script>
+	    $('#modal1').openModal({
+		    dismissible:false
+	    });
+	    
+	    function checkAge(){
+			d1 = new Date("October 21, 1998");
+			d2 = new Date($( "#date" ).val());
+			if(d2 <= d1){
+			    $('#modal1').closeModal()
+				
+			}
+	    }
+	    
+		$(document).ready(function() {
+		   $('#datepicker').datepicker({
+		     changeMonth: true,
+		     changeYear: true,
+		     dateFormat: 'MM yy',
+		       
+		     onClose: function() {
+		        var iMonth = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+		        var iYear = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+		        $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
+		     },
+		       
+		     beforeShow: function() {
+		       if ((selDate = $(this).val()).length > 0) 
+		       {
+		          iYear = selDate.substring(selDate.length - 4, selDate.length);
+		          iMonth = jQuery.inArray(selDate.substring(0, selDate.length - 5), $(this).datepicker('option', 'monthNames'));
+		          $(this).datepicker('option', 'defaultDate', new Date(iYear, iMonth, 1));
+		           $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
+		       }
+		    }
+		  });
+		});
+  </script>
 	<?php
 }
 	
