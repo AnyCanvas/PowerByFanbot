@@ -59,8 +59,8 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
+			  <div id="default-settings"></div>
 			  <div id="default-birthday"></div>
-		      <label class="active" for="date">Fecha de nacimiento</label>
 			  </form>
 		    </div>
 		  </div>
@@ -75,12 +75,8 @@
 		    dismissible:false
 	    });
 	$("#default-settings").birthdayPicker();	
-					$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
-					$("#max-year-birthday").birthdayPicker({
-						"defaultDate": "01-03-1980",
-						"maxYear": "2020",
-						"maxAge": 65
-					});	
+	$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
+
 	</script>
 	<?php
 }
