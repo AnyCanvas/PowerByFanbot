@@ -59,7 +59,7 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <div id="default-settings" name="date"></div>
+			  <div id="default-birthday"></div>
 		      <label class="active" for="date">Fecha de nacimiento</label>
 			  </form>
 		    </div>
@@ -71,26 +71,16 @@
   </div>	
 
 	<script>
+	    $('#modal1').openModal({
+		    dismissible:false
+	    });
 	$("#default-settings").birthdayPicker();	
 					$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
 					$("#max-year-birthday").birthdayPicker({
 						"defaultDate": "01-03-1980",
 						"maxYear": "2020",
 						"maxAge": 65
-					});
-					$("#short-month-birthday").birthdayPicker({
-						"defaultDate": "01-03-1980",
-						"maxYear": "2020",
-						"maxAge": 65,
-						"monthFormat":"short"
-					});
-					$("#long-month-birthday").birthdayPicker({
-						"defaultDate": "01-03-1980",
-						"maxYear": "2020",
-						"maxAge": 65,
-						"monthFormat":"long",
-						"sizeClass": "span3"
-					});			
+					});	
 	</script>
 	<?php
 }
