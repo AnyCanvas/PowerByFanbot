@@ -1,9 +1,4 @@
 <body>
-	<style>
-		.ui-datepicker-calendar {
-		    display: none;
-		}​
-	</style>
 	<script>
 		function sendName(){
 			window.location = "node.php?name=" + $("#fnbt-name-label").val();;
@@ -64,7 +59,7 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <input iid='txtDate' type="text" class="datepicker">
+			  <input id="date" type="date" class="datepicker">
 		      <label class="active" for="date" max="1998-10-21">Fecha de nacimiento</label>
 			  </form>
 		    </div>
@@ -76,42 +71,18 @@
   </div></script>	
 
   <script>
-//	    $('#modal1').openModal({
-//		    dismissible:false
-//	    });
+	    $('#modal1').openModal({
+		    dismissible:false
+	    });
 	    
 	    function checkAge(){
 			d1 = new Date("October 21, 1998");
-			d2 = new Date($( "#txtDate" ).val());
+			d2 = new Date($( "#date" ).val());
 			if(d2 <= d1){
 			    $('#modal1').closeModal()
 				
 			}
 	    }
-	    
-		$(document).ready(function() {
-		   $('#txtDate').datepicker({
-		     changeMonth: true,
-		     changeYear: true,
-		     dateFormat: 'MM yy',
-		       
-		     onClose: function() {
-		        var iMonth = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
-		        var iYear = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
-		        $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
-		     },
-		       
-		     beforeShow: function() {
-		       if ((selDate = $(this).val()).length > 0) 
-		       {
-		          iYear = selDate.substring(selDate.length - 4, selDate.length);
-		          iMonth = jQuery.inArray(selDate.substring(0, selDate.length - 5), $(this).datepicker('option', 'monthNames'));
-		          $(this).datepicker('option', 'defaultDate', new Date(iYear, iMonth, 1));
-		           $(this).datepicker('setDate', new Date(iYear, iMonth, 1));
-		       }
-		    }
-		  });
-		});
   </script>
 	<?php
 }
