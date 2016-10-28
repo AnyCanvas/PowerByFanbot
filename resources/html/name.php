@@ -59,8 +59,19 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <div id="default-birthday"></div>
-		      <label class="active" for="date">Fecha de nacimiento</label>
+				<div class="container" style="margin-top:150px;">
+				<h1>jQuery Birthday Picker Demos</h1>
+				<h4>Default Settings</h4>
+							<div id="default-settings"></div>
+							<h4>Default Birthday [defaultDate: 01-03-1980]</h4>
+							<div id="default-birthday"></div>
+							<h4>maxYear: 2020, maxAge: 65, defaultDate: 01-03-1980</h4>
+							<div id="max-year-birthday"></div>
+							<h4>maxYear: 2020, monthFormat:short maxAge: 65, defaultDate: 01-03-1980</h4>
+							<div id="short-month-birthday"></div>
+							<h4>maxYear: 2020, monthFormat:long maxAge: 65, defaultDate: 01-03-1980, sizeClass:span3</h4>
+							<div id="long-month-birthday"></div>
+				</div>
 			  </form>
 		    </div>
 		  </div>
@@ -69,7 +80,6 @@
       <a href="#!" onclick="checkAge();" class="waves-effect waves-green btn-flat">Continuar</a>
     </div>
   </div>	
-
 	<script>
 	$("#default-settings").birthdayPicker();	
 					$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
@@ -77,7 +87,20 @@
 						"defaultDate": "01-03-1980",
 						"maxYear": "2020",
 						"maxAge": 65
-					});	
+					});
+					$("#short-month-birthday").birthdayPicker({
+						"defaultDate": "01-03-1980",
+						"maxYear": "2020",
+						"maxAge": 65,
+						"monthFormat":"short"
+					});
+					$("#long-month-birthday").birthdayPicker({
+						"defaultDate": "01-03-1980",
+						"maxYear": "2020",
+						"maxAge": 65,
+						"monthFormat":"long",
+						"sizeClass": "span3"
+					});			
 	</script>
 	<?php
 }
