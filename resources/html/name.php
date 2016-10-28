@@ -59,8 +59,8 @@
 		  <div class="row">
 		    <div class="input-field col s6">
 			  <form id="ageForm">
-			  <input id="date" type="date" class="datepicker">
-		      <label class="active" for="date" max="1998-10-21">Fecha de nacimiento</label>
+			  <div id="default-settings" name="date"></div>
+		      <label class="active" for="date">Fecha de nacimiento</label>
 			  </form>
 		    </div>
 		  </div>
@@ -68,22 +68,30 @@
     <div class="modal-footer">
       <a href="#!" onclick="checkAge();" class="waves-effect waves-green btn-flat">Continuar</a>
     </div>
-  </div></script>	
+  </div>	
 
-  <script>
-	    $('#modal1').openModal({
-		    dismissible:false
-	    });
-	    
-	    function checkAge(){
-			d1 = new Date("October 21, 1998");
-			d2 = new Date($( "#date" ).val());
-			if(d2 <= d1){
-			    $('#modal1').closeModal()
-				
-			}
-	    }
-  </script>
+	<script>
+	$("#default-settings").birthdayPicker();	
+					$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
+					$("#max-year-birthday").birthdayPicker({
+						"defaultDate": "01-03-1980",
+						"maxYear": "2020",
+						"maxAge": 65
+					});
+					$("#short-month-birthday").birthdayPicker({
+						"defaultDate": "01-03-1980",
+						"maxYear": "2020",
+						"maxAge": 65,
+						"monthFormat":"short"
+					});
+					$("#long-month-birthday").birthdayPicker({
+						"defaultDate": "01-03-1980",
+						"maxYear": "2020",
+						"maxAge": 65,
+						"monthFormat":"long",
+						"sizeClass": "span3"
+					});			
+	</script>
 	<?php
 }
 	

@@ -15,3 +15,5 @@
       <script src="/js/common.js"></script>
 	  <script type="text/javascript" src="/js/qrcode.min.js"></script>
 	  <script type="text/javascript" src="/js/JsBarcode.all.min.js"></script>
+	  <script type="text/javascript" src="/js/jquery-birthday-picker.min.js"></script>
+
