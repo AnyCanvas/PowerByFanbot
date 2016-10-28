@@ -71,9 +71,9 @@
   </div>	
 
 	<script>
-	    $('#modal1').openModal({
-		    dismissible:false
-	    });
+//	    $('#modal1').openModal({
+//		    dismissible:false
+//	    });
 	$("#default-settings").birthdayPicker();	
 	$("#default-birthday").birthdayPicker({"defaultDate":"01-03-1980"});
 
