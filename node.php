@@ -69,7 +69,7 @@
 								} else if( !(fanbotStatus($_SESSION['fnbt']["deviceId"], $_SESSION['fnbt']['accesToken']) ) ){
 									$_SESSION['error'] = 1;
 									$_SESSION['page'] = 0;
-									require_once("resources/html/error1.php");									
+									require_once("resources/html/error2.php");									
 								} else if (checkInteraction() ){	
 									$_SESSION['page'] = 3;
 									if ($_SESSION['fnbt']['config']['socialnetwork'] == 'facebook'){	
