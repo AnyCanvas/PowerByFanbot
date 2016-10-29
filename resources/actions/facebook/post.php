@@ -18,7 +18,7 @@
 			  			<i class="mdi mdi-facebook left" style=" font-size: 4vw !important;"></i>Compartir en Facebook
 			  		</a>
 			  </div>
-			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando el <a href="http://fanbot.me/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a></p>
+			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando los <a href="http://<?echo $_SERVER['HTTP_HOST']?>/tyc/<?php echo $_SESSION['site']['dir'] ?>.html" target="_blank"> Términos y condiciones y el Aviso de Privacidad</a></p>
 
 	    </footer>
 
