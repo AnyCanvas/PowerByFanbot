@@ -56,7 +56,7 @@
 
 		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/like.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
 <?php if($_SESSION['fnbt']['config']["type"] == 'post'){ ?>
-		<p style="font-size: x-small; text-align: center; padding-top: 5px; background-color: #CEC9C9; position: absolute; bottom: 0; left: 0; width: 100%; margin: 0; padding-bottom: 2px;">Al continuar estarás aceptando el <a href="http://fanbot.me/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a></p>			
+			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando los <a href="http://<?echo $_SERVER['HTTP_HOST']?>/tyc/<?php echo $_SESSION['site']['dir'] ?>.html" target="_blank"> Términos y condiciones y el Aviso de Privacidad</a></p>		
 <?php } ?>
 		</div>
 	    <footer style="height: 45vh;">
