@@ -23,7 +23,7 @@
 	    <footer style="height: 45vh; width: 100vw;">
 		      <p class="fnbt-name-text grey-text">Es tu primera ves<br>¡Disfruta la experiencia!<p>
 			  <a class="waves-effect waves-light btn fb-btn btn-centered" style=" background-color: #405A9F; font-size: 3vw;" onclick="postclick();"><i class="mdi mdi-facebook left" style=" font-size: 4vw !important;"></i>Continuar con Facebook</a>
-			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando los <a href="http://<? echo $_SERVER['HTTP_HOST'] ?>/tyc/<?php echo $_SESSION['site']['dir'] ?>.html" target="_blank"> Términos y condiciones y el Aviso de Privacidad</a></p>
+			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando los <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/tyc/<?php echo $_SESSION['site']['dir'] ?>.html" target="_blank"> Términos y condiciones y el Aviso de Privacidad</a></p>
 	    </footer>
 
 	</div>
