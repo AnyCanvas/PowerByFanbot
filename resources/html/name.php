@@ -5,7 +5,7 @@
 		}
 	</script>
 	<div class="container-fluid" style="height: 100%; width: 100%">
-		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/fanbot_label.png); background-repeat: no-repeat; background-position: center center; background-size: 100% auto;">
+		<div id="upper-div" style="height: 55vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/fanbot_label.png); background-repeat: no-repeat; background-position: center center; background-size: auto 100%;">
 		</div>
 	    <footer style="height: 45vh;">
 		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta</p>
