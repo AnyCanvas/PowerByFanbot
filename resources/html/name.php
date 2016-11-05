@@ -11,7 +11,7 @@
 		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta</p>
 		      <form action="node.php" method="get" >
 <?php if($_SESSION['site']['dir'] == 'fan'){ ?>
-		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text" style="bg-color: #f44336 !important"></input>
+		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text" style="background-color: #f44336 !important;"></input>
 <?php }else{ ?>
 		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text"></input>
 <?php } ?>
