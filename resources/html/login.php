@@ -23,8 +23,8 @@
 		<div class="div-wrapper full login-img" style="background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/login.png); background-repeat: no-repeat; background-position: center center; background-size: auto auto;">
 		</div>
 		</div>
-	    <footer style="height: 55vh; width: 100vw;">
-			  <a class="waves-effect waves-light btn fb-btn btn-centered" style=" background-color: #405A9F; font-size: 3vw; margin-top: 1vh;" onclick="postclick();"><i class="mdi mdi-facebook left" style=" font-size: 4vw !important;"></i>Continuar con Facebook</a>
+	    <footer style="height: 55vh; width: 100vw; margin-top: 1vh;">
+			  <a class="waves-effect waves-light btn fb-btn btn-centered" style=" background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; font-size: 3vw;" onclick="postclick();"><i class="mdi mdi-facebook left" style=" font-size: 4vw !important;"></i>Continuar con Facebook</a>
 			  <p style="font-size: x-small; text-align: center; padding-top: 5px;">Al continuar estarás aceptando los <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/tyc/<?php echo $_SESSION['site']['dir'] ?>.html" target="_blank"> Términos y condiciones y el Aviso de Privacidad</a></p>
 	    </footer>
 	    
