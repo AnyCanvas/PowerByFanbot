@@ -20,7 +20,7 @@
 
 
 		<div id="upper-div" style="height: 45vh; width: 100vw; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
-		<div class="div-wrapper full login-img" style="background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/login.png); background-repeat: no-repeat; background-position: center bottom; background-size: auto auto;">
+		<div class="div-wrapper full login-img" style="background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/login.png); background-repeat: no-repeat; background-position: center bottom; background-size: 20% auto;">
 		</div>
 		</div>
 	    <footer style="height: 55vh; width: 100vw; padding-top: 1vh; background-color: <?php echo $_SESSION['site']['bgcolor'] ?> !important;">
