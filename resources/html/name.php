@@ -10,8 +10,12 @@
 	    <footer style="height: 45vh;">
 		      <p class="fnbt-name-text grey-text">Escribe la palabra de la etiqueta</p>
 		      <form action="node.php" method="get" >
+<?php if($_SESSION['fnbt']['name'] == 'fnbt'){ ?>
+		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input red white-text"></input>
+<?php }else{ ?>
 		      <input onfocus="makeBig();" onfocusout="makeSmall();" name="name" id="fnbt-name-label" class="fnbt-name-input white-text"></input>
-		      </form>
+<?php } ?>
+			      </form>
 			<a id="name-btn" style="display: none;" class="button-div btn-floating btn-large waves-effect green accent-2" onclick="sendName();"><i class="material-icons white-text">arrow_forward</i></a>
 
 	    </footer>
