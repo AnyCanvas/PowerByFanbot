@@ -18,7 +18,7 @@
     <body>
 
 
-		<div id="upper-div" style=" height: 65vh; background-image: url(/media/clients/<?php echo $_SESSION['site']['dir'] ?>/error.png); background-repeat: no-repeat; background-position: center top; background-size: auto 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
+		<div id="upper-div" style=" height: 65vh; background-image: url(/media/clients/<?php echo $_SESSION['site']['dir'] ?>/error.png); background-repeat: no-repeat; background-position: center bottom; background-size: 100% auto; background-color: #ee5559;">
 		</div>
 	    <footer style="height: 35vh;" class="red accent-2">
 		      <p class="error-text white-text">Esa palabra no coincide<br>con la de la etiqueta.<p>
