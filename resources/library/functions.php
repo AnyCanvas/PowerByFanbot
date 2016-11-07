@@ -200,6 +200,7 @@
 				if ($conn->connect_error) {
 				    die("Connection failed: " . $conn->connect_error);
 				} 
+	
 				
 		$sql = "SELECT * FROM users WHERE fbID = '". $_SESSION['fbUser']['id']. "'";
 		$result = $conn->query($sql);
@@ -220,7 +221,7 @@
 				
 				if ($conn->query($sql) === TRUE) {
 				} else {
-				    echo "Error: " . $sql . "<br>" . $conn->error;
+				    echo "Error";
 				}
 		}
 				$conn->close();
@@ -253,23 +254,23 @@
 				
 				if ($conn->query($sql) === TRUE) {
 				} else {
-				    echo "Error: " . $sql . "<br>" . $conn->error;
+				    echo "Error";
 				}
-				
+
 				if($_SESSION['fnbt']['plan'] == 1 || $_SESSION['fnbt']['plan'] == 2){
 
 					$sql = "UPDATE fanbot SET credit = credit - 1 WHERE id = '". $_SESSION['fnbt']['id'] ."'";
 					
 					if ($conn->query($sql) === TRUE) {
 					} else {
-					    echo "Error: " . $sql . "<br>" . $conn->error;
+					    echo "Error";
 					}
 
 					$sql = "UPDATE fanbot SET estatus = 0 WHERE credit = 0 AND id = '". $_SESSION['fnbt']['id'] ."'";
 
 					if ($conn->query($sql) === TRUE) {
 					} else {
-					    echo "Error: " . $sql . "<br>" . $conn->error;
+					    echo "Error";
 					}
 
 				}
