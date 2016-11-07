@@ -7,7 +7,7 @@
 		}
 		
 		function hideModal(){
-		  if($("#shopCode").val() == "F4M2"){
+		  if($("#shopCode").val() == "<?php echo ord (substr($_SESSION['fnbt']['config']['type'], 0) ) . ord ( substr($_SESSION['fnbt']['config']['type'], 1) )?>"){
 		    $('#modalShop').closeModal();
 		  }
 		}
@@ -21,7 +21,7 @@
 		<div id="upper-div" style="height: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>;">
 		<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
 
-	    <a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
+	<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
 		</div>
 	</div>
 	
@@ -34,8 +34,7 @@
       <div class="modal-footer">
         <a class="waves-effect waves-green btn-flat" onclick="hideModal();">Aceptar</a>
       </div>
-    </div>
-    
+    </div>    
 <?php } else { ?>
 		<div id="upper-div" style="height: 100%; background-color: <?php echo $_SESSION['site']['bgcolor'] ?>; background-image: url(./media/clients/<?php echo $_SESSION['site']['dir'] ?>/lose.png); background-repeat: no-repeat; background-position: center top; background-size: 100% auto;">
 		</div>
