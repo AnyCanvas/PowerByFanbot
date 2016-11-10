@@ -63,7 +63,7 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 });
 
 function makeCode () {		
-    $("#code").show();	
+    $("#code").hide();	
 	qrcode.makeCode("98300");
 }
 
