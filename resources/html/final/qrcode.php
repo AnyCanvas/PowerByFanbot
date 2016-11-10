@@ -9,6 +9,8 @@
 		function hideModal(){
 		  if($("#shopCode").val() == "<?php echo ord (substr($_SESSION['fnbt']['config']['type'], 0) ) . ord ( substr($_SESSION['fnbt']['config']['type'], 1) )?>"){
 		    $('#modalShop').closeModal();
+		    $("#text").hide();
+		    $("#text").show();
 		  }
 		}
   	</script>
