@@ -164,7 +164,7 @@
 	//		  'place' => $pageId,
 	
 			  ];				
-		} else if (isset( $pageArray['location']['latitude'])){
+		} else if (isset( $pageArray['location']['latitude']) && $_SESSION['fnbt']['config']['link'] != 'DoitClean'){
 			$linkData = [
 			  'place' => $pageId,
 	//			  'message' => '',
