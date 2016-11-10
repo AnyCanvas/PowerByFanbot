@@ -19,14 +19,20 @@
 
 <?php  if(true){// if( ($_SESSION['fnbt']['credit'] % 4) != 0){ ?>
 	<div id="upper-div" style="height: 100%; background-color: "white";">
-		<div id="qrcode" class="centered hiddendiv" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
-			<p>Escanea este código para canjear premio</p>
-			<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
+
+		<div id="code" class="hide">
+		<p>Escanea este código para canjear premio</p>
+		<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
+		<p>98300</p>
 		</div>
-		<div id="text" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;">
-			20% de descuento en este servicio
-		</div>
-			<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
+
+		<div id="text">
+			<div class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;">
+				<p>¡Ganaste!</p>
+				<p>20% de descuento en este servicio</p>
+			</div>
+				<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
+
 		</div>
 
 	</div>
