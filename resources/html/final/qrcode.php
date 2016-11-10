@@ -28,9 +28,9 @@
 
 		<div id="text">
 			<div class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;">
-				<p style="font-size: x-large; text-align: center; color: #03a9f4;">¡Ganaste!</p>
+				<p style="font-size: xx-large;text-align: center;color: #03a9f4;font-weight: 500;">¡Ganaste!</p>
 				<p style="font-size: small; text-align: center; color: #03a9f4;">20% de descuento en este servicio</p>
-				<p style="font-size: small; text-align: center; padding-top: 10vh;">Muestra esta pantalla en la caja para canjear tu premio</p>
+				<p style="font-size: small;text-align: center;padding-top: 10vh;font-weight: 500;">Muestra esta pantalla en la caja para canjear tu premio</p>
 			</div>
 				<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
 
