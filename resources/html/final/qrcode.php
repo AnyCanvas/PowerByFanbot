@@ -10,7 +10,7 @@
 		  if($("#shopCode").val() == "<?php echo ord (substr($_SESSION['fnbt']['config']['type'], 0) ) . ord ( substr($_SESSION['fnbt']['config']['type'], 1) )?>"){
 		    $('#modalShop').closeModal();
 		    $("#text").hide();
-		    $("#text").show();
+		    $("#code").show();
 		  }
 		}
   	</script>
@@ -23,9 +23,10 @@
 	<div id="upper-div" style="height: 100%; background-color: "white";">
 
 		<div id="code" class="hide">
-		<p>Escanea este código para canjear premio</p>
-		<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
-		<p>98300</p>
+			<p style="font-size: small;text-align: center;padding-top: 10vh;font-weight: 500;">Escanea este código para canjear premio</p>
+			<p style="font-size: small;text-align: center;padding-top: 10vh;font-weight: 500;">98300</p>
+			<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
+
 		</div>
 
 		<div id="text">
@@ -62,8 +63,8 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 });
 
 function makeCode () {		
-	
-	qrcode.makeCode("http://fanbot.me");
+    $("#code").show();	
+	qrcode.makeCode("98300");
 }
 
 makeCode();
