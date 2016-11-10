@@ -27,9 +27,9 @@
 		</div>
 
 		<div id="text">
-			<div class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;">
-				<p>¡Ganaste!</p>
-				<p>20% de descuento en este servicio</p>
+			<div class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;" style="valign-wrapper">
+				<p style="valign">¡Ganaste!</p>
+				<p style="valign">20% de descuento en este servicio</p>
 			</div>
 				<a onclick="showModal();" class="waves-effect waves-light btn white-text btn-centered red darken-3" style=" bottom: 0; position: absolute; width: 100vw; left: 0vw;"><i class="material-icons left">arrow_forward</i>SOY EL ENCARGADO</a>
 
