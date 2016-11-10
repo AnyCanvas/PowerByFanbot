@@ -25,7 +25,7 @@
 		<div id="code">
 			<p style="font-size: small;text-align: center;padding-top: 10vh;font-weight: 500;">Escanea este código para canjear premio</p>
 			<p style="font-size: small;text-align: center;padding-top: 10vh;font-weight: 500;">98300</p>
-			<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto; padding-top: 10vh;"></div>
+			<div id="qrcode" class="centered" style="width:300px; height:300px; margin-top:15px; margin: auto;"></div>
 
 		</div>
 
