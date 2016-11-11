@@ -1,7 +1,7 @@
 <?php if (isset($_GET["qr"]) and isset($_GET["sucursal"]) ){
 	
 				
-		require("resources/library/config.php");		
+		require("resources/config.php");		
 			$servername = $config["db"]["fanbot"]["host"];
 			$username = $config["db"]["fanbot"]["username"];
 			$password = $config["db"]["fanbot"]["password"];
