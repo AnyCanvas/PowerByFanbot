@@ -15,7 +15,7 @@
 			$accesToken = $_SESSION['fnbt']['accesToken'];
 			if($_SESSION['site']['prize'] == 'image' ){
 				require_once("resources/html/final/shopcode.php");
-			} else if($_SESSION['site']['prize'] == 'qr' ) 
+			} else if( $_SESSION['site']['prize'] == 'qr' ) 
 			{
 				require_once("resources/html/final/qrcode.php");
 			} else if($_SESSION['site']['prize'] == 'bar' )

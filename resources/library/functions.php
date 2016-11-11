@@ -243,10 +243,8 @@
 				} 
 
 				if($_SESSION['action'] == 'rate'){
-
 					$sql = "INSERT INTO interactions  (fanbotId, userId, clientId, fbPage, action, data) VALUES ( '". $_SESSION['fnbt']['id']. "','".  $_SESSION['fbUser']['id']. "','". $_SESSION['fnbt']['clientId']. "','". $_SESSION['fnbt']['config']['link'] . "', '". $_SESSION['action'] ."', '". $_SESSION['data'] ."')";
 				} else {
-
 					$sql = "INSERT INTO interactions  (fanbotId, userId, clientId, fbPage, action) VALUES ( '". $_SESSION['fnbt']['id']. "','".  $_SESSION['fbUser']['id']. "','". $_SESSION['fnbt']['clientId']. "','". $_SESSION['fnbt']['config']['link'] . "', '". $_SESSION['action'] ."')";
 					
 				}
@@ -275,6 +273,19 @@
 
 				}
 				
+				
+			if($_SESSION['site']['prize'] == 'qr'){
+
+					$sql = "SELECT * FROM qr WHERE usuario = 'NULL'";
+
+					$result = $conn->query($sql);
+					
+					if ($result->num_rows > 0) {	
+						$_SESSION["qrcode"] = $row["code"];
+						$_SESSION["qrtext"] = $row["texto"];
+					}
+											
+			}
 				$conn->close();
 		}
 	
