@@ -13,6 +13,7 @@
 		if ( $_SESSION['error'] != "name" ){
 			$deviceId = $_SESSION['fnbt']["deviceId"];
 			$accesToken = $_SESSION['fnbt']['accesToken'];
+			saveInteractionToDB();
 			if($_SESSION['site']['prize'] == 'image' ){
 				require_once("resources/html/final/shopcode.php");
 			} else if( $_SESSION['site']['prize'] == 'qr' ) 
@@ -29,7 +30,7 @@
 			if($_SESSION['action'] == 'rate'){
 				$_SESSION['data'] = '{"q":"'. $_SESSION['q'] .'","a":"'. $_GET['a'] .'"}';
 			}
-			saveInteractionToDB();
+
 		} else {
 				require_once("resources/html/error1.php");
 			}
