@@ -274,9 +274,9 @@
 				}
 				
 				
-			if($_SESSION['site']['prize'] == 'qr'){
+			if( $_SESSION['site']['prize'] == 'qr'){
 
-					$sql = "SELECT * FROM qr WHERE usuario = 'NULL'";
+					$sql = "SELECT * FROM qr WHERE usuario = NULL";
 
 					$result = $conn->query($sql);
 					
