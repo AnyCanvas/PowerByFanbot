@@ -284,13 +284,20 @@
 						$row = $result->fetch_assoc();
 						$_SESSION["qrcode"] = $row["code"];
 						$_SESSION["qrtext"] = $row["texto"];
-					} else{
-						$_SESSION["qrcode"] = "NULL";
-						$_SESSION["qrtext"] = "NULL";						
-					}
-											
+					} 
+
+
+					$sql = "UPDATE qr SET usuario = '". $_SESSION['fbUser']['id'] ."' WHERE code = '". $_SESSION["qrcode"] ."'";
+					
+					$result = $conn->query($sql);
+
+					if ($conn->query($sql) === TRUE) {
+					} else {
+					    echo "Error";
+					}											
 			}
-				$conn->close();
+					
+			$conn->close();
 		}
 	
 	function findFnbt($fnbtName){	
