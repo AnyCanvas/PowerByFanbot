@@ -283,6 +283,9 @@
 					if ($result->num_rows > 0) {	
 						$_SESSION["qrcode"] = $row["code"];
 						$_SESSION["qrtext"] = $row["texto"];
+					} else{
+						$_SESSION["qrcode"] = "NULL";
+						$_SESSION["qrtext"] = "NULL";						
 					}
 											
 			}
