@@ -10,8 +10,8 @@
       <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0001, initial-scale=1.0001, maximum-scale=1.0001, user-scalable=no">
 
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="/js/materialize.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
       <script src="/js/common.js"></script>
 	  <script type="text/javascript" src="/js/qrcode.min.js"></script>
 	  <script type="text/javascript" src="/js/JsBarcode.all.min.js"></script>
