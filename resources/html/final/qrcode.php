@@ -2,13 +2,22 @@
 	<?php require_once( "resources/html/header.php" ); ?>
   	<script>
 	  	ga("send", "event", "<?php echo $_SESSION['fnbt']['id']; ?>", "step 3", "<?php echo $_SESSION['fnbt']['config']['type'];?> success");
+
+		 $(document).ready(function(){
+		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		    $('#modalShop').modal();
+		  });
+		$(document).ready(function(){
+		    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		    $('#modalShop').modal();
+		  });
 	    function showModal(){
-		  $('#modalShop').openModal();
+		  $('#modalShop').modal('open');
 		}
 		
 		function hideModal(){
 		  if($("#shopCode").val() == "<?php echo ord (substr($_SESSION['fnbt']['config']['type'], 0) ) . ord ( substr($_SESSION['fnbt']['config']['type'], 1) )?>"){
-		    $('#modalShop').closeModal();
+		    $('#modalShop').modal('close');
 		    $("#text").hide();
 		    $("#code").show();
 		  }

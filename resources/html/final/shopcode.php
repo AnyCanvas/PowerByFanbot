@@ -3,12 +3,12 @@
   	<script>
 	  	ga("send", "event", "<?php echo $_SESSION['fnbt']['id']; ?>", "step 3", "<?php echo $_SESSION['fnbt']['config']['type'];?> success");
 	    function showModal(){
-		  $('#modalShop').openModal();
+		  $('#modalShop').modal('open');;
 		}
 		
 		function hideModal(){
 		  if($("#shopCode").val() == "<?php echo ord (substr($_SESSION['fnbt']['config']['type'], 0) ) . ord ( substr($_SESSION['fnbt']['config']['type'], 1) )?>"){
-		    $('#modalShop').closeModal();
+		    $('#modalShop').modal('close');;
 		  }
 		}
   	</script>
