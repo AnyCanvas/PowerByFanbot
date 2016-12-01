@@ -276,7 +276,7 @@
 				
 			if( $_SESSION['site']['prize'] == 'qr'){
 
-					$sql = "SELECT * FROM qr WHERE usuario is NULL";
+					$sql = "SELECT * FROM qr WHERE usuario is NULL ORDER BY RAND()";
 
 					$result = $conn->query($sql);
 					
@@ -285,9 +285,19 @@
 						$_SESSION["qrcode"] = $row["code"];
 						$_SESSION["qrtext"] = $row["texto"];
 					} 
+					
+					
+					$sql = "SELECT id FROM qr WHERE userId = '".$_SESSION['fbUser']['id']."'";
 
+					$result = $conn->query($sql);
+					
+					if ($result->num_rows > 0) {	
+						$row = $result->fetch_assoc();
+						$idInt = $row["id"];
+					} 
+					
 
-					$sql = "UPDATE qr SET usuario = '". $_SESSION['fbUser']['id'] ."' WHERE code = '". $_SESSION["qrcode"] ."'";
+					$sql = "UPDATE qr SET usuario = '". $_SESSION['fbUser']['id'] ."', interactionId = '".$idInt."' WHERE code = '". $_SESSION["qrcode"] ."'";
 					
 					$result = $conn->query($sql);
 
