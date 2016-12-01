@@ -287,7 +287,7 @@
 					} 
 					
 					
-					$sql = "SELECT id FROM qr WHERE userId = '".$_SESSION['fbUser']['id']."'";
+					$sql = "SELECT id FROM interactions WHERE userId = '".$_SESSION['fbUser']['id']."'";
 
 					$result = $conn->query($sql);
 					
