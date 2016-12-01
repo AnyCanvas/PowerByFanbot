@@ -287,7 +287,7 @@
 					} 
 					
 					
-					$sql = "SELECT id FROM interactions WHERE userId = '".$_SESSION['fbUser']['id']."' ORDER BY userId DESC";
+					$sql = "SELECT id FROM interactions WHERE userId = '".$_SESSION['fbUser']['id']."' ORDER BY date DESC";
 
 					$result = $conn->query($sql);
 					
